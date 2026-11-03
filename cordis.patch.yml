@@ -1,0 +1,6 @@
+# This bundle's own patch layer: inserted after the official bundles and
+# before the user's cordis.patch.yml, so the user may still override `config`.
+- insert:
+    - id: usage-summary
+      name: dsh-usage-summary
+      inject: [webServer, credentials, sessions]

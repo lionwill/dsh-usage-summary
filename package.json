@@ -1,0 +1,40 @@
+{
+  "name": "dsh-usage-summary",
+  "version": "0.7.0",
+  "description": "DSH Web 用量汇总：状态栏胶囊 + 展开面板，按当前会话渠道切换（DeepSeek 官方 token/花费/余额 或 OpenCode Go 套餐三窗口 + 本会话 Go token）；历史会话后台索引，刷新可高优先统计；颜色阈值可在面板 ⚙ 中自设。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout"
+      ],
+      "platform": "web"
+    }
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "opencode",
+    "opencode-go",
+    "usage",
+    "quota"
+  ],
+  "license": "MIT",
+  "author": "dsh-usage-summary contributors"
+}
