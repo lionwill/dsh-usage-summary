@@ -1,5 +1,7 @@
 # dsh-usage-summary
 
+[English](README.en.md) | 简体中文
+
 DeepSeek Harness Web 的**用量汇总**小组件：输入框下方状态栏（`conversation.composer.dock`，
 `order: -10`）里一颗紧凑胶囊，排在「N 轮 M 步 · tok/s」统计胶囊**左侧**；点击**向上**弹出明细面板。
 
